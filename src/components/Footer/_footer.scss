@@ -1,0 +1,68 @@
+@use '../../styles/variables/variables.scss';
+
+.footer {
+  padding: 5rem 0;
+
+  & h6,
+  p,
+  a {
+    color: $white;
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+  a:hover {
+    color: $hover;
+  }
+
+  .margin-5-helper {
+    margin-top: 48px;
+  }
+
+  .margin-4-helper {
+    margin-top: 40px;
+  }
+
+  .footer-container {
+    margin: auto;
+
+    & .row {
+      justify-content: center;
+    }
+
+    .copyright-text {
+      margin: 80px 0 0;
+      text-align: center;
+    }
+
+    .social-platforms {
+      a {
+        margin: 0 5px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      .linkedin {
+        background: url("../../assets/svgs/Social/linkedin.svg") no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+      }
+
+      .instagram {
+        background: url("../../assets/svgs/Social/instagram.svg") no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+      }
+
+      .facebook {
+        background: url("../../assets/svgs/Social/facebook.svg") no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+      }
+    }
+  }
+}

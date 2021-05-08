@@ -1,0 +1,82 @@
+@use '../../styles/variables/variables.scss';
+
+.get-started {
+  padding: 15rem 0;
+
+  & h3,
+  p {
+    text-align: center;
+  }
+
+  .get-started-grid {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    p {
+      max-width: 155px;
+    }
+  }
+
+  .step-1-img {
+    background: url("../../assets/svgs/Get-Started/1.svg") no-repeat 0 0;
+    width: 96px;
+    height: 92px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .step-2-img {
+    background: url("../../assets/svgs/Get-Started/2.svg") no-repeat 0 0;
+    width: 96px;
+    height: 92px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .step-3-img {
+    background: url("../../assets/svgs/Get-Started/3.svg") no-repeat 0 0;
+    width: 96px;
+    height: 92px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .step-4-img {
+    background: url("../../assets/svgs/Get-Started/4.svg") no-repeat 0 0;
+    width: 96px;
+    height: 92px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .step-1,
+  .step-2,
+  .step-3,
+  .step-4 {
+    text-align: center;
+  }
+
+  .step-row {
+    justify-content: center;
+    margin: auto;
+  }
+
+  .arrow {
+    background: url("../../assets/svgs/Get-Started/arrow.svg") no-repeat 0 0;
+    width: 24px;
+    height: 16px;
+    display: inline-block;
+    position: absolute;
+    right: -100%;
+    top: 40%;
+  }
+
+  .get-started-link {
+    color: $linkColor;
+  }
+
+  .arrow-fwd {
+    margin: auto 0;
+  }
+}

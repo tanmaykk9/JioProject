@@ -1,0 +1,63 @@
+@use '../../styles/variables/variables.scss';
+@use '../../styles/mixins/mixins.scss';
+
+.guide {
+  @include makeBanner(3rem 0, $white);
+
+  h3 {
+    color: $headerColor;
+  }
+
+  .guide-container {
+    position: relative;
+    display: flex;
+    .guide-text {
+      color: $blackCol;
+    }
+
+    .guide-instructions {
+      width: 80%;
+      border-right: 1px solid #cecece;
+    }
+
+    .signup {
+      margin: auto;
+      text-align: center;
+
+      .signup-link {
+        color: $headerColor;
+        font-size: 22px;
+        padding-right: 20px;
+        position: relative;
+        &::after {
+          content: "";
+          width: 8px;
+          height: 14px;
+          background: url("../../assets/svgs/arrow-icon.svg") no-repeat 0 0;
+          position: absolute;
+          top: 8px;
+          right: 0;
+          display: inline-block;
+        }
+      }
+    }
+
+    .redirect-link {
+      display: inline-block;
+      color: $headerColor;
+      position: relative;
+      padding-right: 20px;
+
+      &::after {
+        content: "";
+        width: 8px;
+        height: 14px;
+        background: url("../../assets/svgs/arrow-icon.svg") no-repeat 0 0;
+        position: absolute;
+        top: 6px;
+        right: 0;
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../styles/variables/variables.scss";
+
+.jio-vr {
+  margin-top: 100px;
+
+  h3 {
+    max-width: 568px;
+    margin: auto;
+    font-weight: bold;
+  }
+
+  .virtual-reality-img {
+    position: relative;
+  }
+  .person-container {
+    height: 65px;
+
+    img {
+      position: relative;
+      transform: translate(-9%, -70%);
+    }
+  }
+}

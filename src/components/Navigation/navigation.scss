@@ -1,0 +1,61 @@
+@use '../../styles/variables/variables.scss';
+@use '../../styles/mixins/mixins.scss';
+
+$background: $navBgColor;
+
+.nav-bar {
+  text-align: center;
+  position: relative;
+  padding: 8px;
+  background-color: $background;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    & > li {
+      display: inline-block;
+      list-style: none;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        position: relative;
+        left: 50%;
+        width: 0;
+        height: 4px;
+        transition: all 0.15s ease;
+      }
+
+      & > a {
+        display: block;
+        padding: 16px 24px;
+        color: #fff;
+        font-family: $fontFamily;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.15 ease;
+
+        &:hover {
+          color: $hover;
+        }
+      }
+
+      &:last-child .vertical-line {
+        display: none;
+      }
+    }
+  }
+}
+
+/* SVG Icons */
+.nav-img {
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+.vertical-line {
+  @include createVerticalLine(1px solid #404040, 10px);
+}

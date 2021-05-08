@@ -1,0 +1,22 @@
+@use '../variables/variables.scss';
+
+@mixin makeNavBar($bgColor, $textColor, $width) {
+  background-color: $bgColor;
+  color: $textColor;
+  width: $width;
+}
+
+@mixin makeBanner($padding, $bgColor) {
+  width: 100%;
+  padding: $padding;
+  background-color: $bgColor;
+}
+
+@mixin createVerticalLine($borderColor, $heightCal) {
+  border-right: $borderColor;
+  height: calc(100% - 10px);
+  position: absolute;
+  right: 0;
+  margin-left: -3px;
+  top: 5px;
+}
